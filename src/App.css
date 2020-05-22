@@ -1,38 +1,69 @@
+
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1350px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  text-align: center;
+  background: black;
+  
+ 
+}
+/*navbar*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgb(100, 103, 103);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hes {
+  color:crimson;
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 3rem;
+}
+
+.hes::before {
+  content: "Ad";
+  font-size: 3rem;
+  font-family: 'La Belle Aurore', cursive;
+  color:yellowgreen;
+  display: inline;
+}
+
+
+.navbtn {
+ 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  height: 30px;
+  width: 36px;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.navbtn-line {
+  width: 30px;
+ height: 2px;
+ background-color: yellowgreen;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
