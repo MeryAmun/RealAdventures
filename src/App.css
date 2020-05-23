@@ -145,7 +145,7 @@ transition: all 0.5s linear;
   
 }
 
-
+/* Icons*/
 .side-icons {
   font-size: 2rem;
   display: flex;
@@ -175,6 +175,32 @@ margin-top: 10px;
   font-size: 2.5rem;
 }
 
+/*Construction code of homepage*/
+
+.cover {
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+
+}
+
+.text {
+  font-family: 'La Belle Aurore', cursive;
+  color:rgb(39, 209, 16);
+  font-size: 6rem;
+}
+
+.tex {
+  font-family: 'La Belle Aurore', cursive;
+  color: silver;
+  font-size: 4rem;
+}
+
+/* Cover  Animations*/
+
 .cover {
 
   padding-bottom: 30px;
@@ -191,31 +217,151 @@ margin-top: 10px;
  -o-animation:move 10s linear 10s infinite ;
 }
 
+@keyframes move {
+
+  0% {
+    background-image: url("./images/ghana 7.jpg") ;
+   transform: translate(0px,0px);
+ }
 
 
 
 
-.text {
+  15% {
+     background-image: url("./images/cam3.jpg") ;
+    transform: translate(0px,0px);
+  }
+
+  30% {
+    background-image: url("./images/va6.jpeg") ;
+     transform: translate(0px,0px);
+   }
+   45% {
+    background-image: url("./images/sud2.jpg") ;
+     transform: translate(0px,0px);
+   }
+   55% {
+  background-image: url("./images/ghana3.jpg");
+  transform: translate(0px, 0px);
+   }
+    
+  60% {
+   background-image: url("./images/niga1.jpg") ;
+    transform: translate(0px,0px);
+  }
+
+  70% {
+    background-image: url("./images/va1.jpeg") ;
+     transform: translate(0px,0px);
+   }
+
+  80% {
+    background-image: url("./images/namib3.jpg") ;
+     transform: translate(0px,0px);
+   }
+  
+  100% {
+    background-image: url("./images/egy5.jpg");
+  transform: translate(0px,0px);
+    
+  }	
+}
+
+
+
+
+
+
+/* media queries home*/
+@media (max-width: 500px) {
+  .cover {
+
+ margin-top:0;
+  height: 100vh;
+  width:100vw;
+  background-image: url("./images/va4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: none;
+  }
+
+  .navbar {
+    background: rgb(100, 103, 103);
+    flex-direction: row;
+  }
+
+  .nave {
+    display: block;
+    font-size: 2rem;
+    width: 40%;
+  }
+  
+
+  .side-icons {
+    font-size: 1rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  } 
+
+  .texi {
+    font-family: 'La Belle Aurore', cursive;
+    color:rgb(39, 209, 16);
+    font-size: 1.5rem;
+
+  }
+  
+
+  .hes::before {
+    content: "Ad";
+    font-size: 2rem;
+    font-family: 'La Belle Aurore', cursive;
+    color:yellowgreen;
+    display: inline;
+  }
+  
+  
+  .text {
+    font-family: 'La Belle Aurore', cursive;
+    color: crimson;
+    font-size: 2rem;
+  }
+  .tex {
+    font-family: 'La Belle Aurore', cursive;
+    color:yellowgreen;
+    font-size: 2rem;
+  }
+
+
+  .foot {
+    width: 100vw;
+    background: rgb(9, 14, 14);
+     font-size: 1rem;
+     font-family: 'La Belle Aurore', cursive;
+     padding: 4px;
+     color: beige;
+   }
+  
+    
+
+}
+
+
+/*.text {
   font-family: 'La Belle Aurore', cursive;
   color:rgb(39, 209, 16);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .tex {
   font-family: 'La Belle Aurore', cursive;
   color: silver;
-  font-size: 3rem;
+  font-size: 2rem;
 }
-  
-.cover {
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
+  */
 
-}
 
 
 .foot {
@@ -227,7 +373,7 @@ margin-top: 10px;
    color: beige;
  }
  
-
+/* End of Homepage code */
 
 
 
