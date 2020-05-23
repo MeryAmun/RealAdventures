@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 import './App.css'
-import Nav from './components/Nav'
+import Icons from './components/Icons'
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Home from './components/home';
+import About from './components/about';
+import Destinations from './components/blog';
+import Contact from './components/contact'
+import Events from './components/Events'
 
 
 
@@ -10,20 +16,28 @@ class App extends Component {
     
     return (
     
-  <div className="App">
-
+      <BrowserRouter>
+      <div className="App">
+      <Events />
      
+       <Icons />
+       <Switch>
+      <Route  exact path='/' component={Home} />
+      <Route path='/about' component={About} />
+  <Route path='/blog' component={Destinations} />
+  <Route path='/contact' component={Contact} />
+     </Switch>
      
-       <Nav />
-          
 </div>
 
-    
+      </BrowserRouter>
     );
   }
 
   
 }
+
+  
 
 
 export default App;

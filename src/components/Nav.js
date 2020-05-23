@@ -12,7 +12,8 @@ const Nav = (props) => {
 </div>
 
 <div className="navebtn">
-<NavButton/>
+<NavButton click=
+{props.drawerClickHandler}/>
 </div>
 </nav>
        )
