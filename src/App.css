@@ -20,7 +20,7 @@
 body {
   
   text-align: center;
-  background: darkgrey;
+  
  
  
  
@@ -375,6 +375,36 @@ margin-top: 10px;
  
 /* End of Homepage code */
 
+/* Contact Page*/
 
 
+.contact {
+  background-color: darkslategrey;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
 
+.container {
+  width: 30vw;
+ text-align: start;
+ padding: 40px;
+  background: aliceblue;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+
+.side {
+  width: 30vw;
+  height: 50vh;
+  background-image: url("./images/va2.jpeg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
