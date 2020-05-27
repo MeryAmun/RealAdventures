@@ -433,21 +433,56 @@ margin-top: 10px;
 
 }
 
+/* Contact Page done*/
+
+/* Destination Page On Construction*/
+
+.destination {
+  background-color: rgb(56, 47, 79);
+  height: 70vw;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
 
 
+.mali {
+  width: 40vw;
+  height: 40vh;
+  background-image: url("./images/ni.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
 
 
+.malawi {
+  width: 40vw;
+  height: 40vh;
+  background-image: url("./images/mala1.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: inherit;
+}
 
 
+.kenya {
+  width: 40vw;
+  height: 40vh;
+  background-image: url("./images/nl.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
 
-
-
-
-
-
-
-
-
+.botswana {
+  width: 40vw;
+  height: 40vh;
+  background-image: url("./images/nc.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+}
 
 
 
