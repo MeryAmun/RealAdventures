@@ -4,13 +4,12 @@ import React, {Component} from 'react'
 class About extends Component {
 
     render() {
-        return(
+        return (
             <div>
-                
-            </div>
-        )
+          
+             </div>
+         );
     }
-}
-
-
-export default About
+    }
+    
+        export default About

@@ -12,6 +12,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
  
  
   
@@ -28,6 +29,7 @@ body {
 }
 /*navbar*/
 .navbar {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -60,6 +62,7 @@ body {
   justify-content: space-around;
   height: 30px;
   width: 36px;
+  margin-right: 1rem;
   background: transparent;
   border: none;
   box-sizing: border-box;
@@ -204,8 +207,8 @@ margin-top: 10px;
 .cover {
 
   padding-bottom: 30px;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-image: url("./images/namib2.jpg");
   background-repeat: no-repeat;
   background-position: top;
@@ -274,6 +277,13 @@ margin-top: 10px;
 
 /* media queries home*/
 @media (max-width: 500px) {
+
+  .App {
+    background-color: rgb(12, 26, 21);
+    width: 100vw;
+     
+    }
+
   .cover {
 
  margin-top:0;
@@ -288,6 +298,8 @@ margin-top: 10px;
   .navbar {
     background: rgb(100, 103, 103);
     flex-direction: row;
+   
+
   }
 
   .nave {
@@ -311,6 +323,12 @@ margin-top: 10px;
     color:rgb(39, 209, 16);
     font-size: 1.5rem;
 
+  }
+
+  .hes {
+    color:crimson;
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 2rem;
   }
   
 
@@ -336,7 +354,7 @@ margin-top: 10px;
 
 
   .foot {
-    width: 100vw;
+    width: 100%;
     background: rgb(9, 14, 14);
      font-size: 1rem;
      font-family: 'La Belle Aurore', cursive;
@@ -365,7 +383,7 @@ margin-top: 10px;
 
 
 .foot {
-  width: 100vw;
+  width: 100%;
   background: rgb(9, 14, 14);
    font-size: 3rem;
    font-family: 'La Belle Aurore', cursive;
@@ -380,8 +398,8 @@ margin-top: 10px;
 
 .contact {
   background-color: rgb(56, 47, 79);
-  height: 80vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -433,14 +451,108 @@ margin-top: 10px;
 
 }
 
+/* media queries contact*/
+@media (max-width: 500px) {
+
+  .App {
+    background-color: rgb(12, 26, 21);
+    width: 100vw;
+     
+    }
+
+.contact {
+   height: 100vh;
+  width: 100vw;
+ background-color:  rgb(56, 47, 79);
+  animation: none;
+  }
+
+  .navbar {
+    background: rgb(100, 103, 103);
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .nave {
+    display: block;
+    font-size: 2rem;
+    width: 40%;
+  }
+  
+
+  .side-icons {
+    font-size: 1rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  } 
+
+  .texi {
+    font-family: 'La Belle Aurore', cursive;
+    color:rgb(39, 209, 16);
+    font-size: 1.5rem;
+
+  }
+  
+
+  .hes::before {
+    content: "Ad";
+    font-size: 2rem;
+    font-family: 'La Belle Aurore', cursive;
+    color:yellowgreen;
+    display: inline;
+  }
+  
+  
+  .text {
+    font-family: 'La Belle Aurore', cursive;
+    color: crimson;
+    font-size: 2rem;
+  }
+  .tex {
+    font-family: 'La Belle Aurore', cursive;
+    color:yellowgreen;
+    font-size: 2rem;
+  }
+
+
+  .contact-us {
+    font-size: 1.5rem;
+     font-family: 'La Belle Aurore', cursive;
+    background-color:burlywood;
+    color:  rgb(56, 47, 79);
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    
+  }
+
+
+  .foot {
+    width: 100vw;
+    background: rgb(9, 14, 14);
+     font-size: 1rem;
+     font-family: 'La Belle Aurore', cursive;
+     padding: 4px;
+     color: beige;
+   }
+  
+    
+
+}
+
+
 /* Contact Page done*/
 
 /* Destination Page On Construction*/
 
 .destination {
   background-color: rgb(56, 47, 79);
-  height: 70vw;
-  width: 100vw;
+  height: 70%;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
