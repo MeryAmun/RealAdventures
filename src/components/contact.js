@@ -17,7 +17,7 @@ const Contact = () => {
  <i className="fas fa-envelope-open-text"></i>
 
     chebesiawah@gmail.com
-                
+     <div classsName="spacer" />           
 <i className="fas fa-mobile"></i>
 
 (+237) 677972126
