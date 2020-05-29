@@ -35,9 +35,18 @@
       "last 1 safari version"
     ]
   },
+<<<<<<< HEAD
   "devDependencies": {
+=======
+ "devDependencies": {
+
+>>>>>>> d63e578342801eade893dc8a19ced51dc0f112af
     ",gh-pages": "^2.2.0"
     
   },
   "homepage": "http://meryamun.github.io/ReelAdventures"
+<<<<<<< HEAD
+=======
+  
+>>>>>>> d63e578342801eade893dc8a19ced51dc0f112af
 }
