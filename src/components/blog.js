@@ -4,12 +4,20 @@ const Blog = () =>{
 
     return (
         <div>
-        <div className="destination">
+        <div className="destination"> 
+        <a href="https://officetourismemali.net">
         <div className="mali"/>
+        </a> 
+        <a href="https://malawitourism.com" target="_blank">
         <div className="malawi"/>
+        </a>
           <div className="cmr"/>
+          <a href="https://botswanatourism.co.bw" target="_blank">
           <div className="botswana"/>
-     <div className="kenya"/>
+          </a>
+     <a href="https://magicalkenya.com" target="_blank">
+<div className="kenya"/>
+</a>
         
 
         </div>
