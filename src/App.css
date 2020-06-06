@@ -324,12 +324,7 @@ margin-top: 10px;
     padding: 5px;
   } 
 
-  .texi {
-    font-family: 'La Belle Aurore', cursive;
-    color:rgb(39, 209, 16);
-    font-size: 1.5rem;
-
-  }
+ 
 
   .hes {
     color:crimson;
@@ -352,8 +347,9 @@ margin-top: 10px;
     color: crimson;
     font-size: 2rem;
   }
+
   .tex {
-    font-family: 'La Belle Aurore', cursive;
+   font-family:  'Verdana', sans-serif;
     color:yellowgreen;
     font-size: 2rem;
   }
@@ -417,7 +413,7 @@ margin-top: 10px;
   
   width: 100%;
   color: white;
-  font-family: 'La Belle Aurore', cursive;
+  font-family:  'Verdana', sans-serif;
   font-size: 1.5rem;
   padding: 20px;
   border-radius: 20px;
@@ -510,12 +506,15 @@ margin-top: 10px;
     flex-direction: column;
   }
 
+  .anim {
+    display: none;
+  }
   
   .section {
     
   word-wrap: none;
     color: white;
-    font-family: 'La Belle Aurore', cursive;
+    font-family:  'Verdana', sans-serif;
     font-size: 1.5rem;
     padding: 20px;
 
@@ -556,15 +555,16 @@ margin-top: 10px;
 }*/
 .contact-us {
   font-size: 1.5rem;
-   font-family: 'La Belle Aurore', cursive;
+  font-family:  'Verdana', sans-serif;
  
   color: white;
   width: 100%;
   height: 60vh;
-  margin: 20px 40px 10px 0px;
-  border-radius: 10px;
   padding: 20px;
   
+}
+.spacer {
+  padding: 20px;
 }
 
 .link {
@@ -577,16 +577,7 @@ margin-top: 10px;
   font-size: 2rem;
 }
 
-/*.side {
-  width: 100%;
-  height: 100%;
-  background-image: url("./images/va2.jpeg");
-  background-repeat: no-repeat;
-  background-position: fixed;
-  margin-left: 50px;
-  margin-top: 100px;
 
-}*/
 
 /* media queries contact*/
 @media (max-width: 500px) {
@@ -655,23 +646,21 @@ background: #0d1521;
   }
 
 
-  .contact-us {
-    font-size: 10px;
-     font-family: 'La Belle Aurore', cursive;
-     text-align: start;
-    background-color:burlywood;
-    background-position: center;
-    color:  rgb(56, 47, 79);
-    width: 90%;
-    height: 60%;
-    border-radius: 10px;
+  .contact-us  h3{
+    text-emphasis: wrap;
+    font-size: 2rem;
+    font-family:  'Verdana', sans-serif;
+    color:  white; 
+   
+  }
+
+  .spacer {
     padding: 20px;
-    margin-left: 30px;
   }
 
 
 .link {
-  color: rgb(56, 47, 79);
+  color: white;
   font-size: 20px;
 }
 
@@ -680,8 +669,9 @@ background: #0d1521;
     background: rgb(9, 14, 14);
      font-size: 1rem;
      font-family: 'La Belle Aurore', cursive;
-     padding: 4px;
+     padding: 4px ;
      color: beige;
+     margin-bottom: auto;
    }
   
     
@@ -870,8 +860,6 @@ background: #0d1521;
 
 /* Stories Route*/
 
-
-
 .container2 {
   background: #0d1521;
   height: 100%;
@@ -888,7 +876,7 @@ background: #0d1521;
 }
 
 .tiex {
-  font-family: 'La Belle Aurore', cursive;
+  font-family:  'Verdana', sans-serif;
   color:yellowgreen;
   background: #0d1521;
   font-size: 1rem;
@@ -902,7 +890,7 @@ background: #0d1521;
 
 .center {
   font-size: 1.5rem;
-  font-family: 'La Belle Aurore', cursive;
+  font-family:  'Verdana', sans-serif;
   color: blueviolet;
 
 
