@@ -8,6 +8,7 @@ import Destinations from './components/blog';
 import Contact from './components/contact'
 import Events from './components/Events'
 import Stories from './components/Stories';
+import Details from './components/Details'
 
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
   <Route path='/blog' component={Destinations} />
   <Route path='/contact' component={Contact} />
   <Route  path='/:stories' component={Stories} />
+  <Route  path='//:details' component={Details} />
      </Switch>
      
 </div>
