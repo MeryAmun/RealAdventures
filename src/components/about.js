@@ -12,7 +12,7 @@ class About extends Component {
           
 <div><p className="section">Reel Ad -ventures, is where you need to come to pick that perfect vacation spot. You are Welcome to our vacation resource bank,and we trust to be of excellent service to you.We recommend that before you click the destination button,share with our wonderful family the experiences from your last vacation we love travel stories :).click the button below to get started.</p>
                  
-                 <Link to={'/:stories/'}>
+                 <Link to={'/:stories/details'}>
                  <button className="btn" >Get Started</button></Link>  
             
            </div>
