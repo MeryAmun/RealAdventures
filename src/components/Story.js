@@ -3,14 +3,14 @@ import {connect} from 'react-redux'
 
 
 
-class Details extends Component {
+class Story extends Component {
 
     render() {
         console.log(this.props)
-        const details = this.props.details ? (
-        <div className="details red text lighten-4">
-        <h4 className="center">{this.props.detail.title}</h4>
-    <p>{this.props.detail.body}</p>
+        const story = this.props.story ? (
+        <div className="Story red text lighten-4">
+        <h4 className="center">{this.props.story.title}</h4>
+    <p>{this.props.story.body}</p>
     <div className="card-action red lighten-5 red-text">
 <p>Posted by Real Adventures</p>
 <p > 22/05 12:30am</p>
@@ -21,16 +21,16 @@ class Details extends Component {
         )
         return (
             <div className="box">
-               <p>{detail}</p> 
+               <p>{story}</p> 
             </div> 
         )
     }
 }
 
 const mapStateToProps = (state, ownProps) => {
-   let id = ownProps.match.params.stories.details
+   let id = ownProps.match.params.story_id
     return {
-   details: state.details.find(detail => detail.id === id)
+   story: state.stories.find(story => story.id === id)
     }
 }
-export default connect(mapStateToProps)(Details)
+export default connect(mapStateToProps)(Story)

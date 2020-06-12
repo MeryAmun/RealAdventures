@@ -25,7 +25,7 @@ const storyList = stories.length  ?   (stories.map(story => {
 
 <div className="card z-depth-0">
  <div className="card-content">
- <Link to={'/:details'}>
+ <Link to={'/:story_id'}>
               
 <h6 className="black-text lighten-3">
 {story.title}</h6>
