@@ -6,23 +6,32 @@ import {connect} from 'react-redux'
 class Story extends Component {
 
     render() {
-        console.log(this.props)
+        //console.log(this.props)
         const story = this.props.story ? (
-        <div className="Story red text lighten-4">
-        <h4 className="center">{this.props.story.title}</h4>
-    <p>{this.props.story.body}</p>
-    <div className="card-action red lighten-5 red-text">
+        <div className="container center">
+        <div className="card z-depth-0 ">
+    <h4 className="card-action red lighten-5 red-text ">{this.props.story.title}</h4>
+    <p className="">{this.props.story.body}</p>
+    <h4 className="card-action red lighten-5 red-text">
 <p>Posted by Real Adventures</p>
 <p > 22/05 12:30am</p>
-</div>
+</h4>
+            </div>
             </div>
         ) : (
-            <div className="center">Loading Stories</div>
+            <div className="story2 center">Loading Stories...</div>
         )
         return (
-            <div className="box">
-               <p>{story}</p> 
-            </div> 
+   <div>
+            <div className="container3">
+            
+            {story}
+            <div>
+            
+        </div>
+</div> 
+ <footer className="foot"><h4> Reel Adventures 2020&copy;</h4></footer>
+     </div>
         )
     }
 }

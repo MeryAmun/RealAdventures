@@ -21,15 +21,16 @@ const {stories} = this.props;
 const storyList = stories.length  ?   (stories.map(story => {
     return (
         
- <div className="container center"key={story.id}>
+ <div className="container center" key={story.id}>
 
 <div className="card z-depth-0">
  <div className="card-content">
- <Link to={'/:story_id'}>
+ <Link to={'/' + story.id}>
               
 <h6 className="black-text lighten-3">
 {story.title}</h6>
 </Link>
+<p> {story.body} </p>
 <div className="card-action red lighten-5 red-text">
 <p>Posted by Real Adventures</p>
 <p > 22nd May 12:30am</p>
