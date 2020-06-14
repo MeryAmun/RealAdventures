@@ -9,13 +9,16 @@ const initState = {
     
     
     const rootReducer = (state = initState, action) => {
-     //if (action.type === 'DELETE_STORY') {
+    if (action.type === 'DELETE_STORY') {
+      let newStories = state.stories.filter(story => {
+        return action.id !== story.id
+      });
       
-       //return {
-       // ...state,
-       // stories: stories
-     // } 
-    //}
+       return {
+       ...state,
+        stories: newStories
+      } 
+    }
      
     return state;
     }

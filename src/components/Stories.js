@@ -6,11 +6,7 @@ import {Redirect} from 'react-router-dom'
 class Stories extends Component {
 
 
-    handleClick = () => {
-   // this.props.deleteStory()
-   this.props.history.push('/');  
-      }
-
+   
  render() {
     //console.log(this.props)
 //const {stories}  = this.props;
@@ -37,16 +33,14 @@ const storyList = stories.length  ?   (stories.map(story => {
 </div>
 </div>
 
-<button className="tiex" onClick={this.handleClick}>
-     Delete Story
-        </button>
+
 </div>
 </div> 
  
     )
 })
 ) : (
-    <div className="center">No Stories yet? Hurry up!!</div>
+    <div className="story2">No Stories yet? Hurry up!!</div>
 )
 
 
@@ -77,14 +71,6 @@ const mapStateToProps = (state) => {
     }
         
 
-   
-
-
-//const mapDispatchToProps = (dispatch) => {
-    
-/////return {
-  // deletestory: (story) => {dispatch(deletestory(story))}
-// }
-//}
+  
 
 export default connect(mapStateToProps)(Stories)

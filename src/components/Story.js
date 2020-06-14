@@ -1,9 +1,17 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import {deleteStory} from '../actions/storyAction'
 
 
 
 class Story extends Component {
+
+
+    handleClick = () => {
+        this.props.deleteStory(this.props.story.id);
+        this.props.history.push('/stories');
+          }
+    
 
     render() {
         //console.log(this.props)
@@ -14,8 +22,12 @@ class Story extends Component {
     <p className="">{this.props.story.body}</p>
     <h4 className="card-action red lighten-5 red-text">
 <p>Posted by Real Adventures</p>
-<p > 22/05 12:30am</p>
+<p > story.time.date()</p>
 </h4>
+
+<button className="tiex" onClick={this.handleClick}>
+     Delete Story
+        </button>
             </div>
             </div>
         ) : (
@@ -42,4 +54,12 @@ const mapStateToProps = (state, ownProps) => {
    story: state.stories.find(story => story.id === id)
     }
 }
-export default connect(mapStateToProps)(Story)
+
+const mapDispatchToProps = (dispatch) => {
+    
+    return {
+       deleteStory: (id) => { dispatch(deleteStory(id)) }
+    }
+    }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Story)
