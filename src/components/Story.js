@@ -21,8 +21,8 @@ class Story extends Component {
     <h4 className="card-action red lighten-5 red-text ">{this.props.story.title}</h4>
     <p className="">{this.props.story.body}</p>
     <h4 className="card-action red lighten-5 red-text">
-<p>Posted by Real Adventures</p>
-<p > story.time.date()</p>
+    <h6>Posted by Real Adventures</h6>
+<h6> 14th June 4:30am</h6>
 </h4>
 
 <button className="tiex" onClick={this.handleClick}>

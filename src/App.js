@@ -9,6 +9,8 @@ import Contact from './components/contact'
 import Events from './components/Events'
 import Stories from './components/Stories';
 import Story from './components/Story';
+import AddStory from './components/addStory';
+
 
 
 
@@ -30,7 +32,7 @@ class App extends Component {
   <Route path='/contact' component={Contact} />
   <Route  path='/stories' component={Stories} />
   <Route  path='/:story_id/' component={Story} />
- 
+  <Route  path='/addstory/' component={AddStory} />
      </Switch>
      
 </div>

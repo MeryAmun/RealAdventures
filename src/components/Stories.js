@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
-import {Redirect} from 'react-router-dom'
+import AddStory from './addStory';
 
 class Stories extends Component {
 
@@ -28,8 +28,8 @@ const storyList = stories.length  ?   (stories.map(story => {
 </Link>
 <p> {story.body} </p>
 <div className="card-action red lighten-5 red-text">
-<p>Posted by Real Adventures</p>
-<p > 22nd May 12:30am</p>
+<h6>Posted by Real Adventures</h6>
+<h6> 14th June 4:30am</h6>
 </div>
 </div>
 
@@ -50,6 +50,7 @@ return (
 <h2 className="tix"> Loading On The Road Stories... (:
   
 {storyList}
+<AddStory />
 </h2>
 </div>
 
