@@ -20,10 +20,10 @@ class Story extends Component {
         <div className="card z-depth-0 ">
     <h4 className="card-action red lighten-5 red-text ">{this.props.story.title}</h4>
     <p className="">{this.props.story.body}</p>
-    <h4 className="card-action red lighten-5 red-text">
+    <div className="card-action red lighten-5 red-text">
     <h6>Posted by Real Adventures</h6>
 <h6> 14th June 4:30am</h6>
-</h4>
+</div>
 
 <button className="tiex" onClick={this.handleClick}>
      Delete Story

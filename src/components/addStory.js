@@ -1,42 +1,76 @@
 import React, {Component} from 'react' 
 import {connect} from 'react-redux'
-import {addStory} from '../actions/addStory'
+import {addStory} from '../actions/storyAction'
 
 
 
 class AddStory extends Component {
+    state ={ 
+        story: [ 
+        {id: '', title: '', body: ''}
+        ]
+}
+    
+
+    handleChange = (e) => {
+        this.setState({
+           state: e.target.value
+     
+        })
+       // console.log(this.props.stories)
+    
+    }
+    
 
 
-    render(){
+handleSubmit = (e) => {
+      e.preventDefault();
+    //this.props.addStory(this.state.stories)
+    //this.setState({stories: [ 
+       // {id: '', title: '', body: ''}
+   // ] })
+   console.log(this.state);
+   
+};
+
+ render(){
         return (
             
         <div className="container center">
-        <form className="card z-depth-0" onClick={this.handleClick} key={addStory.id}>
- <label for="title"  id="title" className="card z-depth-0 lighten-5 black-text">
- <input type="text" />
+     <form className="card z-depth-0" onSubmit={this.handleSubmit}>
+ <label className="card z-depth-0 lighten-5 black-text">
+ <input type="text" name="title" placeholder="Title" onChange={this.handleChange} value={this.state.title}/>
 </label>
-<label for="body"  id="body" className="card  z-depth-0 lighten-5 black-text">
-<input type="text" />
+<label className="card  z-depth-0 lighten-5 black-text">
+<input type="text" name="message" placeholder="Write Story" onChange={this.handleChange} value={this.state.body}/>
 </label>
-<h4 className="card-action red lighten-5 red-text">
+<div className="card-action red lighten-5 red-text">
 <h6>Posted by Real Adventures</h6>
 <h6> 14th June 4:30am</h6>
-</h4>
+</div>
 
-<button className="tiex" onClick={this.handleClick}>
-     Add Story
-        </button>
+<input type="submit" value="Add Story" className="tiex" onClick={this.handleClick} />
+
 </form>
 </div>
         );
     }
 }
+ const mapStateToProps = (state) => {
 
+    //let id = ownProps.match.params.story_id
+    return {
+  story: state.story
+   //.filter(story => story.id === id)
+    }
+    
+}
 
 const mapDispatchToProps = (dispatch) => {
+   
     return {
-        addStory: (id) => {dispatch(addStory(id))}
+       addStory: (story) => {dispatch(addStory(story))}
     }
 }
 
-export default connect(null, mapDispatchToProps)(AddStory)
+export default connect(mapStateToProps, mapDispatchToProps)(AddStory)

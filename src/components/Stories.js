@@ -17,16 +17,16 @@ const {stories} = this.props;
 const storyList = stories.length  ?   (stories.map(story => {
     return (
         
- <div className="container center" key={story.id}>
-
+ <div className="container center"  key={story.id}>
 <div className="card z-depth-0">
  <div className="card-content">
- <Link to={'/' + story.id}>
+ <Link to = {'/' + story.id}>
               
 <h6 className="black-text lighten-3">
 {story.title}</h6>
 </Link>
 <p> {story.body} </p>
+
 <div className="card-action red lighten-5 red-text">
 <h6>Posted by Real Adventures</h6>
 <h6> 14th June 4:30am</h6>
@@ -66,8 +66,10 @@ return (
 
  
 const mapStateToProps = (state) => {
+    //let id = ownProps.match.params.story_id
    return {
-     stories: state.stories
+    stories: state.stories
+    //.filter(story => story.id === id)
 }
     }
         
