@@ -1,10 +1,10 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom';
+import React from 'react'
 
 
-class About extends Component {
 
-    render() {
+const About = () => {
+
+   
       //console.log(this.props)
     return (
             <div className="about">
@@ -22,6 +22,6 @@ class About extends Component {
              </div>
          );
     }
-    }
+    
     
         export default About

@@ -1,15 +1,15 @@
 export const deleteStory = (id) => {
     return {
         type: 'DELETE_STORY',
-        id: id
+        payload: id
     }
 };
 
-export const addStory = (stories) => {
+export const addStory = (story) => {
+    story.id = Math.random();
     return {
         type: 'ADD_STORY',
-       stories : {
-            id: '', title: '', body: ''}
+      payload : story
     
     }
 };

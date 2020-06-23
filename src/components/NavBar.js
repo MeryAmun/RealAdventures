@@ -8,7 +8,7 @@ import Events from './Events'
 
 
 
-class  NavBar extends Component {
+const NavBar = () => {
   
 
 
@@ -16,19 +16,14 @@ class  NavBar extends Component {
       //setTimeout(() => {
       //  props.history.push('/')
     //}, 100000);
-    
-    
-render() {
-  
-return (
-         
-         <nav className="navbar">
+    return (
+   <nav className="navbar">
 
 <Events />
 </nav>
         )
        }
-    }
+   
 
 
 export default NavBar

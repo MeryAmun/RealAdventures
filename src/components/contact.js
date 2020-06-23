@@ -21,7 +21,7 @@ const Contact = () => {
 
 (+237) 677972126
 <div className="spacer"/>
-<a href="https://github.com/MeryAmun" target= "_blank" className="link" >Github:https://github.com/MeryAmun</a>
+<a href="https://github.com/MeryAmun" target= "_blank" className="link" rel="noopener noreferrer" >Github:https://github.com/MeryAmun</a>
 </h3>
                 </div>
              

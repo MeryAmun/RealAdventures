@@ -1,23 +1,17 @@
 import React,{Component} from 'react';
 import { connect } from 'react-redux';
 import {Link} from 'react-router-dom';
-import AddStory from './addStory';
-
-class Stories extends Component {
+import AddStory from './addStory'
 
 
-   
- render() {
-    //console.log(this.props)
-//const {stories}  = this.props;
-//const storyList  = stories.length ? 
-
-const {stories} = this.props;
+const Stories = ({stories}) => {
+ // console.log(this.props)
+ //const {stories} = this.props;
 
 const storyList = stories.length  ?   (stories.map(story => {
     return (
         
- <div className="container center"  key={story.id}>
+ <div className="container center" key={story.id}>
 <div className="card z-depth-0">
  <div className="card-content">
  <Link to = {'/' + story.id}>
@@ -50,7 +44,7 @@ return (
 <h2 className="tix"> Loading On The Road Stories... (:
   
 {storyList}
-<AddStory />
+<AddStory/>
 </h2>
 </div>
 
@@ -61,7 +55,7 @@ return (
 
 )
 }
-}
+
 
 
  

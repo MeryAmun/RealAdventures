@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 const Drawer = props => {
    let drawerClasses = 'drawer';
    if (props.show) {
+     
        drawerClasses = 'drawer open';
    }
    
