@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import Stories from './Stories';
+//import AddStory from './addStory'
 import {deleteStory} from '../actions/storyAction'
 
 
@@ -31,13 +33,14 @@ class Story extends Component {
             </div>
             </div>
         ) : (
-            <div className="story2 center">Loading Stories...</div>
+            <div className="story2 center"><Stories/></div>
         )
         return (
    <div>
             <div className="container3">
-            
+           
             {story}
+          
             <div>
             
         </div>

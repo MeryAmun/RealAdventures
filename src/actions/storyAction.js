@@ -1,7 +1,7 @@
 export const deleteStory = (id) => {
     return {
         type: 'DELETE_STORY',
-        payload: id
+        id: id
     }
 };
 

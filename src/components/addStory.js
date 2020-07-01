@@ -23,26 +23,22 @@ handleSubmit = (e) => {
       e.preventDefault();
     this.props.addStory(this.state);
     //console.log(this.state)
-    this.setState({value: ''});
-   
-};
-
-   
-
-   
-
- render(){
+    this.setState({
+        [e.target.id]: ""
+    })
+    };
+render(){
 
         return (
            
         <div className="container center">
      <form className="card z-depth-0" id='id' onSubmit={this.handleSubmit}>
- <label className="card z-depth-0 lighten-5 black-text">
- <input type="text" id="title" name="title" placeholder="Title" onChange={this.handleChange}/>
-</label>
-<label className="card  z-depth-0 lighten-5 black-text">
-<input type="text" id="body" name="body" placeholder="Write Story" onChange={this.handleChange}/>
-</label>
+ <label className="card z-depth-0 lighten-5 black-text"/>
+ <input type="text" id="title" placeholder="Title"  onChange={this.handleChange} value={this.state.id} />
+
+<label className="card  z-depth-0 lighten-5 black-text"/>
+<input type="text" id="body"  placeholder="Write Story"  onChange={this.handleChange} value={this.state.id} />
+
 <div className="card-action red lighten-5 red-text">
 <h6>Posted by Real Adventures</h6>
 <h6> 14th June 4:30am</h6>
@@ -55,15 +51,7 @@ handleSubmit = (e) => {
         );
     }
 }
- //const mapStateToProps = (state) => {
-
-    //let id = ownProps.match.params.story_id
-   // return {
-  //story: state.story
-   //.filter(story => story.id === id)
-   // }
-    
-//}
+ 
 
 const mapDispatchToProps = (dispatch) => {
    
