@@ -33,6 +33,26 @@ const Loader = () => {
         
      }
  var quoteTimer = setInterval(changeQuote, 5000);
+
+ var allImages = $('gallery');
+ var currentImage = 0;
+
+ function changeImage(){
+
+     $(allImages[currentImage]).fadeOut(2000, function(){
+
+        if(currentImage == allImages.length - 1){
+            currentImage = 0;
+        }else{ currentImage++;
+
+        }
+        $(allImages[currentImage]).fadeIn(2000);
+
+
+     });
+    
+ }
+var ImageTimer = setInterval(changeImage, 5000);
         });
         return (
             <div></div>

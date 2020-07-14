@@ -221,69 +221,12 @@ blockquotes:first-of-type {
   padding-bottom: 30px;
   height: 100vh;
   width: 100%;
-  background-image: url("./images/namib2.jpg");
+  background-image: url("./images/n9.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
- animation: move 10s linear 10s infinite;
- -webkit-animation:move 10s linear 10s infinite ;
- -moz-animation:move 10s linear 10s infinite ;
- -ms-animation:move 10s linear 10s infinite ;
- -o-animation:move 10s linear 10s infinite ;
+ 
 }
-
-/*@keyframes move {
-
-  0% {
-    background-image: url("./images/ghana 7.jpg") ;
-   transform: translate(0px,0px);
- }
-
-
-
-
-  15% {
-     background-image: url("./images/cam3.jpg") ;
-    transform: translate(0px,0px);
-  }
-
-  30% {
-    background-image: url("./images/va6.jpeg") ;
-     transform: translate(0px,0px);
-   }
-   45% {
-    background-image: url("./images/sud2.jpg") ;
-     transform: translate(0px,0px);
-   }
-   55% {
-  background-image: url("./images/ghana3.jpg");
-  transform: translate(0px, 0px);
-   }
-    
-  60% {
-   background-image: url("./images/niga1.jpg") ;
-    transform: translate(0px,0px);
-  }
-
-  70% {
-    background-image: url("./images/va1.jpeg") ;
-     transform: translate(0px,0px);
-   }
-
-  80% {
-    background-image: url("./images/namib3.jpg") ;
-     transform: translate(0px,0px);
-   }
-  
-  100% {
-    background-image: url("./images/egy5.jpg");
-  transform: translate(0px,0px);
-    
-  }	
-}
-
-*/
-
 
 
 
@@ -380,19 +323,6 @@ blockquotes:first-of-type {
 }
 
 
-/*.text {
-  font-family: 'La Belle Aurore', cursive;
-  color:rgb(39, 209, 16);
-  font-size: 1.5rem;
-}
-
-.tex {
-  font-family: 'La Belle Aurore', cursive;
-  color: silver;
-  font-size: 2rem;
-}
-  */
-
 
 
 .foot {
@@ -415,7 +345,7 @@ blockquotes:first-of-type {
   width:100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 60px;
 }
@@ -432,77 +362,30 @@ blockquotes:first-of-type {
 
 }
 
-.btn {
-  margin: 15px;
+.saw {
+  cursor: pointer;
   
 }
 
-.anim {
-  height: 60vh;
-  width: 100vw;
-  background-image: url("./images/nf.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  margin-left: 5px;
-  animation: wild 10s linear 10s infinite;
-   -webkit-animation: wild 10s elinear 10s infinite ;
-   -moz-animation: wild 10s linear 10s infinite ;
-   -ms-animation: wild 10s linear 10s infinite ;
-   -o-animation: wild 10s linear 10s infinite ;
-  }
-   
+gallery {
   
-  @keyframes wild {
-  
-    0% {
-      background-image: url("./images/ken1.jpg") ;
-     transform: translate(0px,0px);
-   }
-  
-  
-  
-  
-    15% {
-       background-image: url("./images/jam4.jpg") ;
-      transform: translate(0px,0px);
-    }
-  
-    30% {
-      background-image: url("./images/jam1.jpg") ;
-       transform: translate(0px,0px);
-     }
-     45% {
-      background-image: url("./images/cam5.jpg") ;
-       transform: translate(0px,0px);
-     }
-     55% {
-    background-image: url("./images/egy4.jpg");
-    transform: translate(0px, 0px);
-     }
-      
-    60% {
-     background-image: url("./images/nr.jpg") ;
-      transform: translate(0px,0px);
-    }
-  
-    70% {
-      background-image: url("./images/6.jpg") ;
-       transform: translate(0px,0px);
-     }
-  
-    80% {
-      background-image: url("./images/cam2.jpg") ;
-       transform: translate(0px,0px);
-     }
-    
-    100% {
-      background-image: url("./images/ken5.jpg");
-    transform: translate(0px,0px);
-      
-    }	
-  }
+  padding: 20px;
+  display: none;
+  margin-left: 20px;
+}
+
+gallery:first-of-type {
+  display: block;
+
+}
+
+
+
+img {
+  height: 50vh;
+  width: 30vw;
+  border-radius: 5px;
+}
   
   
   /* About Page media query*/
@@ -516,25 +399,24 @@ blockquotes:first-of-type {
     display: flex;
     flex-direction: column;
   }
-
-  .anim {
-    display: none;
-  }
   
   .section {
     
   word-wrap: none;
     color: white;
     font-family:  'Verdana', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 20px;
 
   }
-  
-  .btn {
-    margin: 15px;
-    
+
+  img {
+    height: 50vh;
+    width: 70vw;
+    border-radius: 5px;
   }
+    
+  
     
 }
 
