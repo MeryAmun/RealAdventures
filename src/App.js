@@ -9,31 +9,32 @@ import Contact from './components/contact'
 import Events from './components/Events'
 import Stories from './components/Stories';
 import Story from './components/Story';
-import AddStory from './components/addStory';
+import Loader from  './loader/loader'
+//import AddStory from './components/addStory';
 
 
 
 
 class App extends Component {
 
+ 
   render() {
-    
     return (
     
       <BrowserRouter>
       <div className="App">
       <Events />
-     
+     <Loader />
        <Icons />
        <Switch>
       <Route  exact path='/' component={Home} />
-      <Route path='/about/' component={About} />
+      <Route path='/about' component={About} />
   <Route path='/blog' component={Destinations} />
   <Route path='/contact' component={Contact} />
   <Route  path='/stories' component={Stories} />
   <Route  path='/:story_id/' component={Story} />
-  <Route  path='/addstory/' component={AddStory} />
      </Switch>
+    
      
 </div>
 

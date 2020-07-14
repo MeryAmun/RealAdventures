@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Loader from  '../loader/loader'
 
 const Contact = () => {
    //programatic ridirect
@@ -11,7 +11,9 @@ const Contact = () => {
     <div>
     <div className="contact">
             <div className="contact-us">
-            <h3>   
+
+    <button className="slide">Click To view Contact</button>
+            <div className=" container toggle">   
  <i className="fas fa-envelope-open-text"></i>
 
     chebesiawah@gmail.com
@@ -22,9 +24,9 @@ const Contact = () => {
 (+237) 677972126
 <div className="spacer"/>
 <a href="https://github.com/MeryAmun" target= "_blank" className="link" rel="noopener noreferrer" >Github:https://github.com/MeryAmun</a>
-</h3>
+</div>
                 </div>
-             
+             <Loader/>
     
     </div>
     <footer className="foot">

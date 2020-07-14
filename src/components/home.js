@@ -1,17 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 
 const Home = () => {
+
+
 
    
         return(
             <div>
            <div className="cover">
-      
-<h1 className="text">Wildest Dreamz!!</h1>
-  <h2 className="tex">Travel the World and Experiance its Wonders!!!</h2>
+        <blockquotes>"Live Your Wildest Dreamz!!"</blockquotes>
+        <blockquotes>"Travel the World and Experiance its Wonders!!!"</blockquotes>
 
-<h2 className="tex">...Lets gooooo!!!!!</h2>
+        <blockquotes>"...Beautiful places are waiting for you...go now!!!!!"</blockquotes>
       
      </div>
      <footer className="foot"><h4> Reel Adventures 2020&copy;</h4></footer>

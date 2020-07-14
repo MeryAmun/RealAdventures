@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Stories from './Stories';
-//import AddStory from './addStory'
+import AddStory from './addStory'
 import {deleteStory} from '../actions/storyAction'
 
 
@@ -11,6 +10,7 @@ class Story extends Component {
 
     handleClick = () => {
         this.props.deleteStory(this.props.story.id);
+        //redirect user
         this.props.history.push('/stories');
           }
     
@@ -33,7 +33,8 @@ class Story extends Component {
             </div>
             </div>
         ) : (
-            <div className="story2 center"><Stories/></div>
+        <div className="story2 center">
+            <h3>Loading Stories...</h3></div>
         )
         return (
    <div>

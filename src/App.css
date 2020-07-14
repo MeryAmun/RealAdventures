@@ -4,6 +4,7 @@
   text-align: center;
   background: black;
   background-position: top;
+  color: aliceblue;
  
   
 }
@@ -197,18 +198,28 @@ margin-top: 10px;
   font-size: 6rem;
 }
 
-.tex {
+blockquotes {
+  display: none;
   font-family: 'La Belle Aurore', cursive;
   color: silver;
   font-size: 4rem;
 }
+
+blockquotes:first-of-type {
+  display: block;
+  font-family: 'La Belle Aurore', cursive;
+  color: silver;
+  font-size: 4rem;
+}
+
+
 
 /* Cover  Animations*/
 
 .cover {
 
   padding-bottom: 30px;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-image: url("./images/namib2.jpg");
   background-repeat: no-repeat;
@@ -221,7 +232,7 @@ margin-top: 10px;
  -o-animation:move 10s linear 10s infinite ;
 }
 
-@keyframes move {
+/*@keyframes move {
 
   0% {
     background-image: url("./images/ghana 7.jpg") ;
@@ -271,7 +282,7 @@ margin-top: 10px;
   }	
 }
 
-
+*/
 
 
 
@@ -561,8 +572,28 @@ margin-top: 10px;
   width: 100%;
   height: 60vh;
   padding: 20px;
-  
-}
+  }
+
+  .toggle {
+   
+    display: none;
+
+  }
+
+
+  .slide{
+    background-color: transparent;
+    font-family:  'Verdana', sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    scrollbar-highlight-color: none;
+    border-radius: 5px;
+    background-blend-mode: unset;
+  }
+
+
 .spacer {
   padding: 20px;
 }
