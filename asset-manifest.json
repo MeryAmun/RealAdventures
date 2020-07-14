@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ReelAdventures/static/css/main.65871f0f.chunk.css",
+    "main.js": "/ReelAdventures/static/js/main.1c14902b.chunk.js",
+    "main.js.map": "/ReelAdventures/static/js/main.1c14902b.chunk.js.map",
+    "runtime-main.js": "/ReelAdventures/static/js/runtime-main.3ad30457.js",
+    "runtime-main.js.map": "/ReelAdventures/static/js/runtime-main.3ad30457.js.map",
+    "static/js/2.10e11b72.chunk.js": "/ReelAdventures/static/js/2.10e11b72.chunk.js",
+    "static/js/2.10e11b72.chunk.js.map": "/ReelAdventures/static/js/2.10e11b72.chunk.js.map",
+    "index.html": "/ReelAdventures/index.html",
+    "precache-manifest.e9814056ebd14fe7482c548576f667bb.js": "/ReelAdventures/precache-manifest.e9814056ebd14fe7482c548576f667bb.js",
+    "service-worker.js": "/ReelAdventures/service-worker.js",
+    "static/css/main.65871f0f.chunk.css.map": "/ReelAdventures/static/css/main.65871f0f.chunk.css.map",
+    "static/js/2.10e11b72.chunk.js.LICENSE.txt": "/ReelAdventures/static/js/2.10e11b72.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ReelAdventures/static/media/va4.9603f6df.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ad30457.js",
+    "static/js/2.10e11b72.chunk.js",
+    "static/css/main.65871f0f.chunk.css",
+    "static/js/main.1c14902b.chunk.js"
+  ]
+}
