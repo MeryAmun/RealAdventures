@@ -2,7 +2,7 @@
 
 .App {
   text-align: center;
-  background: black;
+  /*background: black;*/
   background-position: top;
   color: aliceblue;
  
@@ -162,7 +162,7 @@ margin-top: 10px;
 .icono {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .icons {
@@ -436,16 +436,7 @@ img {
   
 }
 
-/*.container {
-  width: 30vw;
- text-align: start;
- padding: 20px;
-  background: aliceblue;
-  color: blueviolet;
-  border: 2px solid blueviolet;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}*/
+
 .contact-us {
   font-size: 1.5rem;
   font-family:  'Verdana', sans-serif;
@@ -597,7 +588,7 @@ background: #0d1521;
 /* Destination Page On Construction*/
 
 .destination {
-  background: #0d1521;
+  /*background: #0d1521;*/
   height: 70%;
   width: 100%;
   padding: 20px;
@@ -774,7 +765,7 @@ background: #0d1521;
 /* Stories Route*/
 
 .container2 {
-  background: #0d1521;
+  /*background: #0d1521;*/
   height: 100%;
   width: 100%;
   padding-top: 10px;
@@ -792,11 +783,9 @@ background: #0d1521;
 .tiex {
   font-family:  'Verdana', sans-serif;
   color:yellowgreen;
-  background: #0d1521;
   font-size: 1rem;
   padding: 8px;
   border-radius: 15px;
-  background: #0d1521;
   margin-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -811,7 +800,7 @@ background: #0d1521;
 }
 
 .container3 {
-  background: #0d1521;
+
   height: 100vh;
   margin-top: 20px;
   padding-top: 10px;
@@ -829,7 +818,7 @@ background: #0d1521;
 .center2 {
   font-size: 1.5rem;
   font-family:  'Verdana', sans-serif;
-  color: blueviolet; 
+  color: white; 
 
 }
 
@@ -840,7 +829,14 @@ form {
  
 }
 
+.theme {
+  cursor: pointer;
+  padding: 5px;
+  color: blanchedalmond;
+  background: #0d1521;
+  margin-top: 10px;
 
+}
 
 
 

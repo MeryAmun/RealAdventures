@@ -1,4 +1,5 @@
 import React from 'react'
+import ThemeToggle from '../components/ThemeToggle'
 
 
 
@@ -17,6 +18,8 @@ const Icons = () => {
               <div>
               <h3 className="texi">On The Road</h3>
               </div>
+              <div><ThemeToggle/></div>
+              
              </div>
             
     )

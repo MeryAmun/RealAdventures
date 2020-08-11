@@ -10,33 +10,39 @@ import Events from './components/Events'
 import Stories from './components/Stories';
 import Story from './components/Story';
 import Loader from  './loader/loader'
-//import AddStory from './components/addStory';
-
+import ThemeContextProvider from './contexts/ThemeContext';
 
 
 
 class App extends Component {
 
- 
+  //static contextType = ThemeContext;
+
   render() {
+   // console.log(this.context)
+   // const {isLightTheme, light, dark} = this.context;
+   //  const theme = isLightTheme ? light : dark 
     return (
     
       <BrowserRouter>
+      <ThemeContextProvider>
+      
       <div className="App">
-      <Events />
+      <Events />  
      <Loader />
        <Icons />
+       
        <Switch>
       <Route  exact path='/' component={Home} />
       <Route path='/about' component={About} />
   <Route path='/blog' component={Destinations} />
   <Route path='/contact' component={Contact} />
-  <Route  path='/stories' component={Stories} />
+  <Route  path='/Stories' component={Stories} />
   <Route  path='/:story_id/' component={Story} />
+  <Route  path='/StoryList/' component={Stories} />
      </Switch>
-    
-     
-</div>
+    </div>
+    </ThemeContextProvider>   
 
       </BrowserRouter>
     );

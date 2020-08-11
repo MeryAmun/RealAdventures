@@ -1,7 +1,10 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import AddStory from './addStory'
+//import AddStory from './addStory'
 import {deleteStory} from '../actions/storyAction'
+import {ThemeContext} from '../contexts/ThemeContext';
+//import Stories from './components/Stories'
+
 
 
 
@@ -14,15 +17,19 @@ class Story extends Component {
         this.props.history.push('/stories');
           }
     
+static contextType = ThemeContext;
 
-    render() {
+ render() {
+     const {isLightTheme, light, dark} = this.context;
+     const theme = isLightTheme ? light : dark 
+     //console.log(this.context)
         //console.log(this.props)
         const story = this.props.story ? (
-        <div className="container center">
-        <div className="card z-depth-0 ">
-    <h4 className="card-action red lighten-5 red-text ">{this.props.story.title}</h4>
+        <div className="container center" style={{background:theme.bg}}>
+        <div>
+    <h4>{this.props.story.title}</h4>
     <p className="">{this.props.story.body}</p>
-    <div className="card-action red lighten-5 red-text">
+    <div>
     <h6>Posted by Real Adventures</h6>
 <h6> 14th June 4:30am</h6>
 </div>
@@ -33,8 +40,7 @@ class Story extends Component {
             </div>
             </div>
         ) : (
-        <div className="story2 center">
-            <h3>Loading Stories...</h3></div>
+        null
         )
         return (
    <div>
@@ -48,7 +54,9 @@ class Story extends Component {
 </div> 
  <footer className="foot"><h4> Reel Adventures 2020&copy;</h4></footer>
      </div>
+     
         )
+    
     }
 }
 
