@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 //import AddStory from './addStory'
 import {deleteStory} from '../actions/storyAction'
 import {ThemeContext} from '../contexts/ThemeContext';
+//import NewStoryForm from './NewStoryForm'
 //import Stories from './components/Stories'
 
 
@@ -14,7 +15,7 @@ class Story extends Component {
     handleClick = () => {
         this.props.deleteStory(this.props.story.id);
         //redirect user
-        this.props.history.push('/stories');
+        this.props.history.push('/storylist');
           }
     
 static contextType = ThemeContext;
@@ -47,7 +48,7 @@ static contextType = ThemeContext;
             <div className="container3">
            
             {story}
-          
+    
             <div>
             
         </div>

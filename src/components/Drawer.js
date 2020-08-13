@@ -9,7 +9,7 @@ const Drawer = props => {
      
        drawerClasses = 'drawer open';
    }
-   
+  // <li><Link to ="/stories" className="nave_single_link">Stories</Link></li>
    return (
      <div>
 <nav className="nave" onClick={props.click}>
@@ -17,8 +17,8 @@ const Drawer = props => {
   <li><Link to ="/" className="nave_single_link">Home</Link></li> 
   <li><Link to ="/about" className="nave_single_link" >About</Link></li> 
 <li><Link to ="/blog" className="nave_single_link" >Destinations</Link></li>
-<li><Link to ="/stories" className="nave_single_link">Stories</Link></li> 
-<li><Link to ="/contact" className="nave_single_link">Contact</Link></li> 
+ <li><Link to ="/contact" className="nave_single_link">Contact</Link></li> 
+<li><Link to ="/storylist" className="nave_single_link">StoryList</Link></li> 
 </ul>
 </nav>
   <Loader/>  

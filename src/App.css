@@ -2,8 +2,9 @@
 
 .App {
   text-align: center;
-  /*background: black;*/
+   background: #0d1521;
   background-position: top;
+  
   color: aliceblue;
  
   
@@ -339,7 +340,7 @@ blockquotes:first-of-type {
 /* About Page */
 
 .abt {
-  background: #0d1521;
+
   margin-top:0;
   height: 100wh;
   width:100%;
@@ -762,6 +763,15 @@ background: #0d1521;
 }
 
 
+/*.story {
+  background: #0d1521;
+color: whit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}*/
+
+
 /* Stories Route*/
 
 .container2 {
@@ -785,6 +795,7 @@ background: #0d1521;
   color:yellowgreen;
   font-size: 1rem;
   padding: 8px;
+  background: black;
   border-radius: 15px;
   margin-left: 15px;
   margin-top: 10px;
@@ -827,6 +838,9 @@ form {
   padding: 20px;
   width: 100%;
  
+}
+.title {
+  padding-top: 40px;
 }
 
 .theme {

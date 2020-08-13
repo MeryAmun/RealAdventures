@@ -15,6 +15,24 @@ const Home = () => {
         <blockquotes>"...Beautiful places are waiting for you...go now!!!!!"</blockquotes>
       
      </div>
+     <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
      <footer className="foot"><h4> Reel Adventures 2020&copy;</h4></footer>
 </div>
       

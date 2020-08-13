@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext} from 'react'
+import {ThemeContext} from '../contexts/ThemeContext';
+
 
 const Blog = () =>{
-
+ const {isLightTheme, light, dark} = useContext(ThemeContext);
+ const theme = isLightTheme ? light : dark;
     return (
-        <div>
+        <div style={{background:theme.bg}}>
         <div className="destination"> 
         <a href="https://officetourismemali.net">
         <div className="mali"/>
