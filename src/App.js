@@ -9,9 +9,11 @@ import Contact from './components/contact'
 import Events from './components/Events'
 import Stories from './components/Stories';
 import Story from './components/Story';
+import StoryDetails from './components/StoryDetails'
 import StoryList from './components/StoryList'
 import Loader from  './loader/loader'
 import ThemeContextProvider from './contexts/ThemeContext';
+import StoryContextProvider from './contexts/StoryContext';
 
 
 
@@ -34,15 +36,19 @@ class App extends Component {
      <Loader />
      <ThemeContextProvider>
        <Icons />
-      
+       
        <Switch>
       <Route  exact path='/' component={Home} />
       <Route path='/about' component={About} />
   <Route path='/blog' component={Destinations} />
   <Route path='/contact' component={Contact} />
   <Route  path='/Stories' component={Stories} />
-  <Route  path='/StoryList' component={StoryList} />  
-  <Route  path='/:story_id/' component={Story} />
+  <StoryContextProvider>
+  <Route  path='/StoryList' component={StoryList} /> 
+    </StoryContextProvider> 
+    <StoryContextProvider>
+       <Route  path='/:storydetails_id/' component={StoryDetails} />
+       </StoryContextProvider>
  </Switch>
 </ThemeContextProvider>   
     </div>
