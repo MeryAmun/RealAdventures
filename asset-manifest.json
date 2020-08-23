@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/ReelAdventures/static/css/main.65871f0f.chunk.css",
-    "main.js": "/ReelAdventures/static/js/main.1c14902b.chunk.js",
-    "main.js.map": "/ReelAdventures/static/js/main.1c14902b.chunk.js.map",
+    "main.css": "/ReelAdventures/static/css/main.889aad8d.chunk.css",
+    "main.js": "/ReelAdventures/static/js/main.52e464c6.chunk.js",
+    "main.js.map": "/ReelAdventures/static/js/main.52e464c6.chunk.js.map",
     "runtime-main.js": "/ReelAdventures/static/js/runtime-main.3ad30457.js",
     "runtime-main.js.map": "/ReelAdventures/static/js/runtime-main.3ad30457.js.map",
-    "static/js/2.10e11b72.chunk.js": "/ReelAdventures/static/js/2.10e11b72.chunk.js",
-    "static/js/2.10e11b72.chunk.js.map": "/ReelAdventures/static/js/2.10e11b72.chunk.js.map",
+    "static/js/2.e4d573ca.chunk.js": "/ReelAdventures/static/js/2.e4d573ca.chunk.js",
+    "static/js/2.e4d573ca.chunk.js.map": "/ReelAdventures/static/js/2.e4d573ca.chunk.js.map",
     "index.html": "/ReelAdventures/index.html",
-    "precache-manifest.e9814056ebd14fe7482c548576f667bb.js": "/ReelAdventures/precache-manifest.e9814056ebd14fe7482c548576f667bb.js",
+    "precache-manifest.f681c3b45d5556ad05c6925856d98cb3.js": "/ReelAdventures/precache-manifest.f681c3b45d5556ad05c6925856d98cb3.js",
     "service-worker.js": "/ReelAdventures/service-worker.js",
-    "static/css/main.65871f0f.chunk.css.map": "/ReelAdventures/static/css/main.65871f0f.chunk.css.map",
-    "static/js/2.10e11b72.chunk.js.LICENSE.txt": "/ReelAdventures/static/js/2.10e11b72.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/ReelAdventures/static/media/va4.9603f6df.jpeg"
+    "static/css/main.889aad8d.chunk.css.map": "/ReelAdventures/static/css/main.889aad8d.chunk.css.map",
+    "static/js/2.e4d573ca.chunk.js.LICENSE.txt": "/ReelAdventures/static/js/2.e4d573ca.chunk.js.LICENSE.txt",
+    "static/media/bafut3.jpg": "/ReelAdventures/static/media/bafut3.599fec58.jpg",
+    "static/media/gira.jpg": "/ReelAdventures/static/media/gira.886d6b88.jpg",
+    "static/media/jam3.jpg": "/ReelAdventures/static/media/jam3.3410494e.jpg",
+    "static/media/App.css": "/ReelAdventures/static/media/va4.9603f6df.jpeg",
+    "static/media/nr.jpg": "/ReelAdventures/static/media/nr.1bceef99.jpg",
+    "static/media/va5.jpeg": "/ReelAdventures/static/media/va5.729b6907.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.3ad30457.js",
-    "static/js/2.10e11b72.chunk.js",
-    "static/css/main.65871f0f.chunk.css",
-    "static/js/main.1c14902b.chunk.js"
+    "static/js/2.e4d573ca.chunk.js",
+    "static/css/main.889aad8d.chunk.css",
+    "static/js/main.52e464c6.chunk.js"
   ]
 }
