@@ -35,11 +35,7 @@ const StoryList = () => {
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
         <NewStoryForm/>
- <footer className="foot">
-        <h4> Reel Adventures 2020&copy;</h4></footer>  
         
 </div>
 
@@ -47,6 +43,10 @@ const StoryList = () => {
     <div className="story2" style={{background:theme.bg, text:theme.text, ui: theme.ui}}>
    <h2 className="tix"> No Stories yet? Hurry up!!!!</h2>
     <NewStoryForm/>
+    <br/>
+        <br/>
+        <br/>
+        
     </div>
 );
 

@@ -16,9 +16,9 @@ const Drawer = props => {
 <ul className="right">
   <li><Link to ="/" className="nave_single_link">Home</Link></li> 
   <li><Link to ="/about" className="nave_single_link" >About</Link></li> 
-<li><Link to ="/blog" className="nave_single_link" >Destinations</Link></li>
+<li><Link to ="/blog" className="nave_single_link" >Places</Link></li>
  <li><Link to ="/contact" className="nave_single_link">Contact</Link></li> 
-<li><Link to ="/storylist" className="nave_single_link">StoryList</Link></li> 
+<li><Link to ="/storylist" className="nave_single_link">RoadGist</Link></li> 
 </ul>
 </nav>
   <Loader/>  

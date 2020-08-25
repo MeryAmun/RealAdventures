@@ -8,7 +8,15 @@ const Home = () => {
    
         return(
             <div>
+
            <div className="cover">
+           <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
         <blockquotes>"Live Your Wildest Dreamz!!"</blockquotes>
         <blockquotes>"Travel the World and Experiance its Wonders!!!"</blockquotes>
 
@@ -33,11 +41,10 @@ const Home = () => {
 <br/>
 <br/>
 <br/>
-     <footer className="foot"><h4> Reel Adventures 2020&copy;</h4></footer>
+     
 </div>
       
-   
-    )
+   )
 
 
 }

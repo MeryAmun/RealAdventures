@@ -6,8 +6,20 @@ const Loader = () => {
 
     $(document).ready(function(){
         
+        $('.navbtn').click(function(){
+            $('.nave').fadeIn(3000);
+        });
+
+        $('.navbtn').click(function(){
+            $('.nave').fadeOut(3000);
+        });
+
         $('.slide').click(function(){
-            $('.toggle').slideDown(2000);
+            $('.toggle').slideDown(3000);
+        });
+
+        $('.slide').mouseenter(function(){
+            $('.toggle').slideUp(3000);
         });
 
      $('.nave').click(function(){

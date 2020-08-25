@@ -2,9 +2,10 @@
 
 .App {
   text-align: center;
-   background: #0d1521;
+   background: #050201;
   background-position: top;
-  color: aliceblue;
+  color: #f0f8ff;
+ 
  }
 
 
@@ -12,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 
  
  
@@ -85,6 +87,8 @@ body {
 
 .nave {
   display: block;
+  padding: 30px;
+  text-align: center;
  
 }
 
@@ -98,7 +102,7 @@ padding-top: 0;
 top: 10%;
 left: 0;
 width: 20%;
-max-width: 400px;
+max-width: 500px;
 z-index: 200;
 transform: translateX(-100);
 transition: transform 2s linear;
@@ -111,7 +115,7 @@ transition: transform 2s linear;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 
@@ -181,22 +185,19 @@ margin-top: 10px;
 /*Construction code of homepage*/
 
 .cover {
+
+  padding-bottom: 30px;
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/n9.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-
-}
-
-.text {
-  font-family: 'La Belle Aurore', cursive;
-  color:rgb(39, 209, 16);
-  font-size: 6rem;
 }
 
 blockquotes {
+  margin-top: 20px;
   display: none;
   font-family: 'La Belle Aurore', cursive;
   color: silver;
@@ -212,28 +213,12 @@ blockquotes:first-of-type {
 
 
 
-/* Cover  Animations*/
-
-.cover {
-
-  padding-bottom: 30px;
-  height: 100vh;
-  width: 100%;
-  background-image: url("./images/n9.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
- 
-}
-
-
-
 /* media queries home*/
 @media (max-width: 500px) {
 
   .App {
     background-color: rgb(12, 26, 21);
-    width: 100vw;
+    width: 80vw;
      
     }
 
@@ -248,8 +233,41 @@ blockquotes:first-of-type {
   animation: none;
   }
 
+  .navbtn {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    width: 26px;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  .navbtn-line {
+    width: 25px;
+   height: 1px;
+   background-color: yellowgreen;
+  
+  }
+  
+  .navebtn {
+    object-position: inherit;
+  }
+  
+
+
+
+
+
   .navbar {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -262,8 +280,35 @@ blockquotes:first-of-type {
 
   .nave {
     display: block;
-    font-size: 2rem;
-    width: 40%;
+    font-size: 10px;
+    width: 10%;
+    text-align: center;
+  }
+
+  .nave ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nave {
+    height: 50%;
+    background: black;
+    opacity: 0.8;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  padding-left: 0px;
+  top: 10%;
+ left: 0;
+  width: 20%;
+  max-width: 500px;
+  z-index: 200;
+  transform: translateX(-100);
+  transition: transform 2s linear;
+  
   }
   
 
@@ -276,35 +321,48 @@ blockquotes:first-of-type {
     padding: 5px;
   } 
 
- 
+  
 
   .hes {
     color:crimson;
     font-family: 'La Belle Aurore', cursive;
-    font-size: 2rem;
+    font-size: 1rem;
   }
   
 
   .hes::before {
     content: "Ad";
-    font-size: 2rem;
+    font-size: 1rem;
     font-family: 'La Belle Aurore', cursive;
     color:yellowgreen;
     display: inline;
   }
-  
-  
-  .text {
-    font-family: 'La Belle Aurore', cursive;
-    color: crimson;
-    font-size: 2rem;
-  }
 
-  .tex {
-   font-family:  'Verdana', sans-serif;
-    color:yellowgreen;
-    font-size: 2rem;
+  blockquotes {
+    display: none;
+    font-family: 'La Belle Aurore', cursive;
+    color: silver;
+    font-size: 1rem;
   }
+  
+  blockquotes:first-of-type {
+    display: block;
+    font-family: 'La Belle Aurore', cursive;
+    color: silver;
+    font-size: 1rem;
+  }
+  
+  .theme {
+    cursor: pointer;
+    padding: 3px;
+    color: blanchedalmond;
+    font-size: 10px;
+    background: #0d1521;
+    margin-top: 5px;
+  
+  }
+  
+  
 
 
   .foot {
@@ -316,7 +374,15 @@ blockquotes:first-of-type {
      color: beige;
    }
   
-    
+   .theme {
+    cursor: pointer;
+    font-size: 8px;
+    padding: 2px;
+    color: blanchedalmond;
+    background: #0d1521;
+    margin-top: 10px;
+  
+  }  
 
 }
 
@@ -396,6 +462,19 @@ img {
     width:100%;
     display: flex;
     flex-direction: column;
+  }
+
+  .navbar {
+    background: rgb(100, 103, 103);
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .nave {
+    display: block;
+    font-size: 2rem;
+    width: 40%;
+    text-align: center;
   }
   
   .section {
@@ -482,13 +561,9 @@ img {
 
 
 /* media queries contact*/
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
-  .App {
-    background-color: rgb(12, 26, 21);
-    width: 100vw;
-     
-    }
+  
 
 .contact {
    height: 100vh;
@@ -498,7 +573,7 @@ background: #0d1521;
   }
 
   .navbar {
-    background: rgb(100, 103, 103);
+    background: #0d1521;
     flex-direction: row;
     width: 100%;
   }
@@ -506,7 +581,8 @@ background: #0d1521;
   .nave {
     display: block;
     font-size: 2rem;
-    width: 40%;
+    width: 20%;
+   
   }
   
 
@@ -550,20 +626,21 @@ background: #0d1521;
 
   .contact-us  h3{
     text-emphasis: wrap;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family:  'Verdana', sans-serif;
     color:  white; 
    
   }
 
   .spacer {
+
     padding: 20px;
   }
 
 
 .link {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 
   .foot {
@@ -665,6 +742,7 @@ background: #0d1521;
     display: block;
     font-size: 2rem;
     width: 40%;
+    text-align: end;
   }
   
 
@@ -810,6 +888,13 @@ color: whit;
 .container3 {
 
   height: 100vh;
+ 
+
+}
+
+.details {
+
+  height: 100vh;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -830,12 +915,23 @@ color: whit;
 
 }
 
-
-form {
-  padding: 20px;
-  width: 100%;
- 
+textarea {
+  font-size: 1.5rem;
+  color: #f0f8ff;
+  font-family:  'Verdana', sans-serif;
+  
 }
+
+.new-form, input {
+  color: #f0f8ff;
+  padding: 10px;
+  
+  font-size: 1rem;
+  font-family:  'Verdana', sans-serif;
+  
+  }
+
+
 .title {
   padding-top: 40px;
 }
@@ -849,6 +945,52 @@ form {
 
 }
 
+
+/*Add story media query*/
+
+@media (min-width: 250px) {
+  .center2 {
+    font-size: 1rem;
+    font-family:  'Verdana', sans-serif;
+    color: white; 
+  
+  }
+  
+  textarea, input {
+    font-size: 1rem;
+    color: #f0f8ff;
+    font-family:  'Verdana', sans-serif;
+    width: 80%;
+    height: 60px;
+    
+  }
+  
+  .new-form {
+    color: #f0f8ff;
+    padding: 5px;
+    
+    font-size: 1rem;
+    font-family:  'Verdana', sans-serif;
+    
+    }
+  
+    .tix {
+      font-family: 'La Belle Aurore', cursive;
+      color:yellowgreen;
+      font-size: 1rem;
+      padding: 8px;
+    }
+  
+  .theme {
+    cursor: pointer;
+    padding: 3px;
+    color: blanchedalmond;
+    background: #0d1521;
+    margin-top: 5pxpx;
+  
+  }
+  
+}
 
 
 

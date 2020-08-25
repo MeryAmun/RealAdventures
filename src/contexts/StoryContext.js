@@ -8,9 +8,13 @@ const StoryContextProvider = (props) => {
         const localData = localStorage.getItem('stories');
         return localData ? JSON.parse(localData) : []});
 
-   useEffect(() => {
+  /* useEffect(() => {
         localStorage.setItem('stories', JSON.stringify(stories))
-    }, [stories])
+    }, [stories])*/
+
+    useEffect(() => {
+        localStorage.setItem('stories', JSON.stringify(stories))
+    }, [stories]);
 
  /*   const addStory = (title, body) => {
    let id = Math.random() * 10

@@ -18,7 +18,7 @@ const About = () => {
             <div className="about">
             <div className="abt" style={{background:theme.bg}} >
 
-    <p className="section">Reel Ad -ventures, is where you need to come to pick that perfect vacation spot. You are Welcome to our vacation resource bank,and we trust to be of excellent service to you.We recommend that before you click the destination button,share with our wonderful family the experiences from your last vacation we love travel stories :).
+    <p className="section">Reel Ad -ventures, is where you need to come to pick that perfect vacation spot. You are Welcome to our vacation resource bank,and we trust to be of excellent service to you.We recommend that before you click the destination button,share with our wonderful family the experiences from your last vacation we love travel stories (..).
     Rush to Road Gists and have your say.</p>
 
   <div className="side">             
@@ -43,8 +43,6 @@ const About = () => {
   </div>
      
          </div>
-      <footer className="foot"><h4> Reel Adventures 2020&copy;</h4></footer>
-     
              </div>
          );
     }

@@ -9,7 +9,7 @@ import Contact from './components/contact'
 import Events from './components/Events'
 import Stories from './components/Stories';
 import Story from './components/Story';
-import StoryDetails from './components/StoryDetails'
+//import StoryDetails from './components/StoryDetails'
 import StoryList from './components/StoryList'
 import Loader from  './loader/loader'
 import ThemeContextProvider from './contexts/ThemeContext';
@@ -27,7 +27,7 @@ class App extends Component {
 // const {isLightTheme, light, dark} = this.state.context;
      //const theme = isLightTheme ? light : dark 
     return (
-    
+      //<Route  path='/:storydetails_id/' component={StoryDetails} />
       <BrowserRouter>
       
      
@@ -36,7 +36,9 @@ class App extends Component {
      <Loader />
      <ThemeContextProvider>
        <Icons />
+       <StoryContextProvider>
        
+       </StoryContextProvider>
        <Switch>
       <Route  exact path='/' component={Home} />
       <Route path='/about' component={About} />
@@ -44,13 +46,15 @@ class App extends Component {
   <Route path='/contact' component={Contact} />
   <Route  path='/Stories' component={Stories} />
   <StoryContextProvider>
-  <Route  path='/StoryList' component={StoryList} /> 
+  <Route  path='/StoryList' component={StoryList} />
+  
     </StoryContextProvider> 
-    <StoryContextProvider>
-       <Route  path='/:storydetails_id/' component={StoryDetails} />
-       </StoryContextProvider>
+    
  </Switch>
-</ThemeContextProvider>   
+</ThemeContextProvider>
+   <footer className="foot">
+     <h4> Reel Adventures 2020&copy;</h4></footer> 
+    
     </div>
       </BrowserRouter>
     );

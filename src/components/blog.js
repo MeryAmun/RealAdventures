@@ -24,8 +24,6 @@ const Blog = () =>{
         
 
         </div>
- <footer className="foot">
-    <h4> Reel Adventures 2020&copy;</h4></footer>  
         </div>
     )
 
