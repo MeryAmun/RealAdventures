@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5086b82d662310925618c33d7c5162a2",
+    "revision": "c162388221283e5539e0756d5fbf8f5a",
     "url": "/ReelAdventures/index.html"
   },
   {
-    "revision": "96f17ef9f61ce0cf4150",
-    "url": "/ReelAdventures/static/css/main.889aad8d.chunk.css"
+    "revision": "94ccb94ea8a859b87be4",
+    "url": "/ReelAdventures/static/css/main.089b8f68.chunk.css"
   },
   {
     "revision": "9cda23867f6a36a08ac6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReelAdventures/static/js/2.e4d573ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "96f17ef9f61ce0cf4150",
-    "url": "/ReelAdventures/static/js/main.52e464c6.chunk.js"
+    "revision": "94ccb94ea8a859b87be4",
+    "url": "/ReelAdventures/static/js/main.d13f464b.chunk.js"
   },
   {
     "revision": "3d423d4531f48221908b",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1bceef99fa0950bc0441011867cc0edd",
     "url": "/ReelAdventures/static/media/nr.1bceef99.jpg"
+  },
+  {
+    "revision": "6342fe16c561713e6504ecb4d5e87a3c",
+    "url": "/ReelAdventures/static/media/va3.6342fe16.jpeg"
   },
   {
     "revision": "9603f6df2bf5afe6fb7de08775555090",
