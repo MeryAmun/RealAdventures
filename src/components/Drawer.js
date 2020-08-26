@@ -13,7 +13,7 @@ const Drawer = props => {
    return (
      <div>
 <nav className="nave" onClick={props.click}>
-<ul className="right">
+<ul>
   <li><Link to ="/" className="nave_single_link">Home</Link></li> 
   <li><Link to ="/about" className="nave_single_link" >About</Link></li> 
 <li><Link to ="/blog" className="nave_single_link" >Places</Link></li>
