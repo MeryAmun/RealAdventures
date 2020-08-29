@@ -31,7 +31,8 @@ Github:https://github.com/MeryAmun</a>
              <Loader/>
     
     </div>
-
+    <footer className="foot">
+            <h4> Reel Adventures 2020&copy;</h4></footer>
     </div>
 )
 
