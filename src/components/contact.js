@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/contact.css'
 import Loader from  '../loader/loader'
 
 const Contact = () => {

@@ -11,7 +11,8 @@ const Loader = () => {
         });
 
         $('.navbtn').click(function(){
-            $('.nave').fadeOut(3000);
+            $('.nave').fadeOut
+            (3000);
         });
 
         $('.slide').click(function(){

@@ -1,24 +1,41 @@
-import React, { useContext } from 'react';
-import {StoryContext } from '../contexts/StoryContext';
-import {ThemeContext} from '../contexts/ThemeContext';
+import React, { Component } from 'react'
 
-
-const StoryDetails = ({story}) => {
-    const {removeStory} = useContext(StoryContext)
-    const {isLightTheme, light, dark} = useContext(ThemeContext);
- const theme = isLightTheme ? light : dark;
- 
-   return(
-       <div>
-       <div className='details' style={{background:theme.bg, text:theme.text, ui: theme.ui}} >
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-           <p>This is why am hot</p>
-       </div>
-       </div>
-   )
+ class StoryDetails extends Component {
+     state = {
+         id: null
+     }
+componentDidMount(){
+    console.log(this.props)
+    let id = this.props.match.params.storydetails_id;
+    this.setState({
+        id: id
+    })
 }
-export default StoryDetails;
+
+
+    render() {
+        return (
+            <div>
+                <p>{this.state.id}</p>
+                <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+            </div>
+        )
+    }
+}
+export default StoryDetails

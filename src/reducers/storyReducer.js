@@ -1,3 +1,5 @@
+
+
 export const storyReducer = (state, action) => {
     switch(action.type) {
         case 'ADD_STORY':

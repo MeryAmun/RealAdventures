@@ -1,0 +1,178 @@
+/* Destination Page On Construction*/
+
+.destination {
+    /*background: #0d1521;*/
+    height: 70%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  
+  
+  .mali {
+    width: 40vw;
+    height: 40vh;
+    background-image: url("../images/ni.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+  }
+  
+  
+  .malawi {
+    width: 40vw;
+    height: 40vh;
+    background-image: url("../images/mala1.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: inherit;
+  }
+  
+  
+  .kenya {
+    width: 40vw;
+    height: 40vh;
+    background-image: url("../images/nl.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+  }
+  
+  .botswana {
+    width: 40vw;
+    height: 40vh;
+    background-image: url("../images/nc.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+  }
+  
+  
+  
+  /* media queries Destinations*/
+  @media (max-width: 500px) {
+  
+    .App {
+      background-color: rgb(12, 26, 21);
+      width: 100vw;
+       
+      }
+  
+  .destination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     height: 100%;
+    width: 100vw;
+    background: #0d1521;
+    animation: none;
+    }
+  
+    .navbar {
+      background: rgb(100, 103, 103);
+      flex-direction: row;
+      width: 100%;
+    }
+  
+    .nave {
+      display: block;
+      font-size: 2rem;
+      width: 20%;
+      text-align: end;
+    }
+    
+  
+    .side-icons {
+      font-size: 1rem;
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+    } 
+  
+    .texi {
+      font-family: 'La Belle Aurore', cursive;
+     color: dimgrey;
+      font-size: 1.5rem;
+  
+    }
+    
+  
+    .hes::before {
+      content: "Ad";
+      font-size: 2rem;
+      font-family: 'La Belle Aurore', cursive;
+     color: dimgrey;
+      display: inline;
+    }
+    
+    
+    .text {
+      font-family: 'La Belle Aurore', cursive;
+     color: grey;
+      font-size: 2rem;
+    }
+    .tex {
+      font-family: 'La Belle Aurore', cursive;
+     color: dimgrey;
+      font-size: 2rem;
+    }
+  
+  
+  
+    .mali {
+      width: 80vw;
+      height: 40vh;
+      background-image: url("../images/ni.jpg");
+      background-repeat: no-repeat;
+      background-position: fixed;
+    }
+    
+    
+    .malawi {
+      width: 80vw;
+      height: 40vh;
+      background-image: url("../images/mala1.jpg");
+      background-repeat: no-repeat;
+      background-position: fixed;
+    }
+    
+    
+    .kenya {
+      width: 80vw;
+      height: 40vh;
+      background-image: url("../images/nl.jpg");
+      background-repeat: no-repeat;
+      background-position: fixed;
+    }
+    
+    .botswana {
+      width: 80vw;
+      height: 40vh;
+      background-image: url("../images/nc.jpg");
+      background-repeat: no-repeat;
+      background-position: fixed;
+      background-size: inherit;
+  
+    }
+  
+  
+  
+  
+    .foot {
+      width: 100vw;
+      background: rgb(9, 14, 14);
+       font-size: 1rem;
+       font-family: 'La Belle Aurore', cursive;
+       padding: 4px;
+       color: beige;
+     }
+    
+      
+  
+  }
+  
+  

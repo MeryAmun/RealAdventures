@@ -4,6 +4,7 @@ import Loader from  '../loader/loader'
 
 
 const Drawer = props => {
+ 
    let drawerClasses = 'drawer';
    if (props.show) {
      

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import '../css/about.css'
 import {ThemeContext} from '../contexts/ThemeContext';
 import va4 from '../images/va4.jpeg'
 import va5 from '../images/va5.jpeg'
@@ -43,6 +44,9 @@ const About = () => {
   </div>
      
          </div>
+         
+         <footer className="foot">
+            <h4> Reel Adventures 2020&copy;</h4></footer>
              </div>
          );
     }
